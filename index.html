@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLITCH DESCENT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hud">
+    <div>⏱️ Time: <span id="time">60</span>s</div>
+    <div>⚠️ Integrity: <span id="integrity">100</span>%</div>
+  </div>
+
+  <h1 id="title">GLITCH DESCENT</h1>
+  <p id="hint">Klik kotak hijau. Jangan sampai integrity habis.</p>
+
+  <div id="arena">
+    <div id="target"></div>
+  </div>
+
+  <button id="stabilize" class="hidden">STABILIZE</button>
+
+  <div id="overlay" class="hidden">
+    <h2 id="result"></h2>
+    <button onclick="location.reload()">Restart</button>
+  </div>
+
+  <audio id="beep" src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YQAAAAA="></audio>
+  <script src="script.js"></script>
+</body>
+</html>
